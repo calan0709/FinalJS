@@ -169,16 +169,19 @@ const serve = document.querySelector('.servi')
 const servicio = document.querySelector('.servicio')
 const paños = document.querySelector('.paños')
 
-servicio.addEventListener('click',()=>{
-    fetch("data.json")
-    .then((res)=>{ console.log(res)
-                    return res.json()})//combierte a json
-    .then((servicio1)=>{
-                console.log(servicio1)
-            
-    })
+/* servicio.addEventListener('click',()=>{
+    fetch("dato.json")
     
-})
+    .then((res)=>{ 
+                    return res.json()
+                })
+    .then((json)=>{
+                console.log(json.servicio2)
+            
+    }) 
+    //console.log(res)
+    .catch((err)=>console.log(err)) 
+}) */
 
 ventana2.addEventListener("submit",(evt)=>{
     evt.preventDefault()
@@ -198,4 +201,5 @@ const salirload = document.querySelector('.salirload')
         evt.preventDefault()
         loading.style.display="none"
     })
-    
+
+console.log(fetch("data.json"))
