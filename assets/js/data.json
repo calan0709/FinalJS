@@ -1,0 +1,31 @@
+[
+    {
+        "servicio1": "repintado",
+        "costo": 7000
+    },
+    {
+        "servicio2": "detailing",
+        "costo": 4500
+    },
+    {
+        "servicio3": "ploteo",
+        "costo": 3000
+    },
+
+    {
+        "paño1": "paño1",
+        "cantidad": 2
+    },
+    {
+        "paño1": "paño2",
+        "cantidad": 3
+    },
+    {
+        "paño1": "paño3",
+        "cantidad": 4
+    },
+    {
+        "paño1": "paño4",
+        "cantidad": 18
+    }
+]

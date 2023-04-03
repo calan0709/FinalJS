@@ -1,0 +1,655 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+body .loader {
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 100%;
+  border: 1px solid #8a1212;
+  border-radius: 16px;
+  overflow: hidden;
+}
+body .loader:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #a13210;
+  animation: 1s prog ease-in;
+}
+@keyframes prog {
+  to {
+    width: 100%;
+  }
+}
+body nav {
+  width: 100%;
+  margin: 1px;
+}
+body nav .fa-ellipsis-stroke {
+  display: none;
+}
+body nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(13, 61, 61);
+  list-style: none;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+}
+body nav ul .logotaller {
+  width: 120px;
+  display: grid;
+  background-color: transparent;
+}
+body nav ul li a {
+  text-decoration: none;
+  margin: 5px;
+  background-color: rgb(13, 61, 61);
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+  font-family: texto1;
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  font-size: 40px;
+}
+body nav ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+body header {
+  width: 100%;
+  height: 20%;
+  /* align-items: center;
+  text-align: center; */
+}
+body header h1 {
+  width: 100%;
+  height: 10%;
+  color: rgb(153, 30, 30);
+  font-size: 120px;
+  font-family: texto1;
+  text-align: center;
+  margin: 1px;
+  position: absolute;
+}
+body header .img {
+  width: 100%;
+}
+body header .videos {
+  display: grid;
+  padding: 10px;
+  margin: 10px;
+  grid-column: 1/5;
+  grid-row: 4/5;
+  justify-items: center;
+  align-items: center;
+}
+body header .videos .video1 {
+  width: 80%;
+  height: 500px;
+}
+body main {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+body main h2 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  color: rgb(129, 31, 31);
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+body main .tarjetas .tarjeta1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+  min-width: 55%;
+  min-height: 60%;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: solid 1px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .tarjetas .tarjeta1:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .tarjetas .tarjeta1 .im1 {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body main .tarjetas .tarjeta1 h4 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 60px;
+  background-color: transparent;
+  color: rgb(243, 194, 134);
+}
+body main .tarjetas .tarjeta1 .tar p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: rgba(161, 182, 71, 0.671);
+  padding: 2px;
+  font-size: 30px;
+}
+body main .tarjetas .tarjeta1 .tar h2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 30px;
+  color: #a59c23;
+}
+body main .tarjetas .tarjeta1 ul {
+  list-style: none;
+}
+body main .tarjetas .tarjeta1 ul li {
+  color: #beb41d;
+  font-size: 30px;
+}
+body main .tarjetas .tarjeta1 .salir {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 3%;
+  left: 96%;
+}
+body main .tarjetas .tarjeta2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+  min-width: 55%;
+  min-height: 60%;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: solid 1px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .tarjetas .tarjeta2:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .tarjetas .tarjeta2 .im2 {
+  width: 100%;
+}
+body main .tarjetas .tarjeta2 h4 {
+  font-size: 60px;
+  background-color: transparent;
+  color: rgb(243, 194, 134);
+}
+body main .tarjetas .tarjeta2 p {
+  color: rgba(161, 182, 71, 0.671);
+  padding: 2px;
+  font-size: 30px;
+}
+body main .tarjetas .tarjeta2 h2 {
+  color: #a59c23;
+  font-size: 30px;
+}
+body main .tarjetas .tarjeta2 ul {
+  list-style: none;
+}
+body main .tarjetas .tarjeta2 ul li {
+  color: #beb41d;
+  font-size: 30px;
+}
+body main .tarjetas .tarjeta2 .cerrar {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 3%;
+  left: 96%;
+}
+body main .tarjeta3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30%;
+  min-width: 55%;
+  min-height: 60%;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: solid 1px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .tarjeta3:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .tarjeta3 .im3 {
+  width: 90%;
+}
+body main .tarjeta3 h4 {
+  font-size: 80px;
+  background-color: transparent;
+  color: rgb(243, 194, 134);
+}
+body main .tarjeta3 p {
+  color: rgba(161, 182, 71, 0.671);
+  padding: 2px;
+  font-size: 30px;
+}
+body main .tarjeta3 h2 {
+  color: #a59c23;
+}
+body main .tarjeta3 ul {
+  list-style: none;
+}
+body main .tarjeta3 ul li {
+  color: #beb41d;
+  font-size: 30px;
+}
+body main .tarjeta3 .close {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 3%;
+  left: 96%;
+}
+body main .directo2 {
+  grid-column: 1/5;
+  grid-row: 3/5;
+}
+body main .directo2 .logoauto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+body main .directo2 img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 2px;
+}
+body main .ventana1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-height: 250px;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: solid 1px;
+  padding: 33px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .ventana1 img {
+  width: 100%;
+}
+body main .ventana1:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .ventana1 h4 {
+  font-size: 60px;
+  background-color: transparent;
+  color: rgb(243, 194, 134);
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana1 h2 {
+  color: #a59c23;
+  font-size: 50px;
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana1 form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+body main .ventana1 form label {
+  font-size: 30px;
+  color: #a59c23;
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana1 form input {
+  font-size: 25px;
+  margin: 1px;
+  padding: 2px;
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana1 form textarea {
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana1 form .enviar {
+  padding: 2px;
+  margin: 2px;
+}
+body main .ventana1 .salirdatos {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 5%;
+  left: 90%;
+}
+body main .ventana2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 60%;
+  min-height: 60%;
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: solid 1px;
+  padding: 33px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .ventana2 img {
+  width: 100%;
+}
+body main .ventana2:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .ventana2 h4 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 60px;
+  background-color: transparent;
+  color: rgb(243, 194, 134);
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana2 h2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color: #a59c23;
+  font-size: 50px;
+  margin: 20px;
+  padding: 2px;
+}
+body main .ventana2 form {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .ventana2 form .date {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .ventana2 form .date label {
+  font-size: 25px;
+  color: #a59c23;
+  margin: 2px;
+  padding: 2px;
+}
+body main .ventana2 form .date input {
+  font-size: 20px;
+  margin: 2px;
+  padding: 2px;
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana2 form .dote {
+  display: flex;
+  flex-wrap: nowrap;
+}
+body main .ventana2 form .dote label {
+  font-size: 25px;
+  color: #a59c23;
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana2 form .dote input {
+  font-size: 25px;
+  margin: 1px;
+  padding: 2px;
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana2 form .dote textarea {
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana2 form .dote select {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
+  color: aliceblue;
+}
+body main .ventana2 form .dote select option {
+  background-color: #000000;
+}
+body main .ventana2 form .reserva {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+body main .ventana2 form input {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 30px;
+  margin: 1px;
+  padding: 2px;
+  background-color: transparent;
+  color: rgb(212, 9, 9);
+}
+body main .ventana2 form .res {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: 20px;
+}
+body main .ventana2 form input {
+  font-size: 30px;
+}
+body main .ventana2 form .coti {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+body main .ventana2 form .coti p {
+  color: #a59c23;
+  font-size: 28px;
+}
+body main .ventana2 form .coti label {
+  font-size: 30px;
+  color: #a59c23;
+  margin: 1px;
+  padding: 2px;
+}
+body main .ventana2 form .salircontacto {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 3%;
+  left: 96%;
+}
+body main .loading {
+  display: none;
+  width: 30%;
+  min-width: 30%;
+  min-height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  background-color: rgba(240, 7, 7, 0.137);
+  border: solid 1px;
+  padding: 33px;
+  text-align: center;
+  border-radius: 20px;
+}
+body main .loading h2 {
+  color: #8f8825;
+}
+body main .loading p {
+  color: #a59c23;
+  font-size: 20px;
+}
+body main .loading:hover {
+  -webkit-box-shadow: 11px 13px 37px 3px rgba(238, 241, 12, 0.219);
+}
+body main .loading button {
+  font-size: 15px;
+  color: #8f8825;
+  background-color: transparent;
+}
+body main .loading .salirload {
+  position: absolute;
+  color: red;
+  background-color: black;
+  top: 3%;
+  left: 94%;
+}
+
+@media (max-width: 893px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav ul li {
+    font-size: 19px;
+  }
+  header {
+    width: 100%;
+  }
+  header .videos {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 603px) {
+  nav {
+    width: 100%;
+  }
+  nav .fa-ellipsis-stroke {
+    display: flex;
+    position: relative;
+    margin: 1px;
+    padding: 1px;
+    color: rgba(255, 0, 0, 0.459);
+    font-size: 37px;
+    background-color: rgb(218, 218, 218);
+  }
+  nav .fa-ellipsis-stroke:hover + ul {
+    left: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(1, 1, 1);
+    width: 260px;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: start;
+    height: 100vh;
+    transition: 0.2s;
+    left: -700px;
+    top: 1;
+  }
+  nav ul img {
+    margin: 5px;
+  }
+  nav ul li {
+    background-color: transparent;
+  }
+  nav ul li a {
+    background-color: transparent;
+  }
+  nav ul:hover {
+    left: 0;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header fieldset {
+    border-color: black;
+  }
+  header .videos {
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+  }
+  header .videos .video1 {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@font-face {
+  font-family: texto1;
+  src: url(../textos1/RubikDistressed-Regular.ttf);
+}
+.emergente1 {
+  display: none;
+}
+
+.emergente2 {
+  display: none;
+}
+
+.t1 {
+  display: none;
+}
+
+.t2 {
+  display: none;
+}
+
+.t3 {
+  display: none;
+}

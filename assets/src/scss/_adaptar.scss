@@ -1,0 +1,68 @@
+/* 
+@media(max-width:893px){ 
+        nav{width: 100%;
+            ul{justify-content:center;
+                li{font-size: 19px;}
+        }
+            
+            }
+        header{width: 100%;
+            .videos{width: 100%;}}
+        main{width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .tarjetas{display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;}
+                }
+            }
+
+
+@media (max-width:603px){
+        nav{ width: 100%;
+            background-color: aqua;
+        .fa-bars{display: block;
+                        color: rgba(255, 0, 0, 0.459);
+                        font-size: 37px;
+                        background-color:rgb(216, 216, 216);
+                    &:hover + ul {
+                        left: 0;
+                    }}
+                ul{ flex-direction: column;
+                    position: fixed;
+                    background-color: rgb(1, 1, 1);
+                    width: 260px;
+                    align-items: center;
+                    padding-top: 30px;
+                    justify-content: start;
+                    height: 100vh;
+                    transition: 0.2s;
+                    left:-700px;
+                    top: 1;
+                img{margin: 5px;
+                            }
+                li{background-color: transparent;
+                a{background-color: transparent;}}
+                        &:hover{
+                            left: 0;
+                        }}
+            }
+        header{width: 100%;
+                display: flex;
+                flex-direction: column;
+                fieldset{border-color:black;}
+                .videos{width: 100%;
+                    margin: 1px;
+                    padding: 1px;
+                    .video1{width: 100%;}}}
+        main{width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                }
+            .tarjetas{display: flex;
+                        flex-wrap: wrap;}        
+
+            }
+                 */
